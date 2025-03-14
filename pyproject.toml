@@ -53,8 +53,8 @@ dev = [
     "types-docutils>=0.21.0.20241128",
 ]
 docs = [
+    "atsphinx-bulma",
     "atsphinx-mini18n",
-    "furo",
     "sphinx-autobuild",
     "sphinx-intl",
 ]

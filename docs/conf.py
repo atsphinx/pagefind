@@ -25,7 +25,7 @@ gettext_compact = False
 locale_dirs = ["_locales"]
 
 # -- Options for HTML output
-html_theme = "furo"
+html_theme = "bulma-basic"
 html_static_path = ["_static"]
 html_title = f"{project} v{release}"
 html_css_files = [
@@ -45,13 +45,7 @@ html_theme_options = {
 }
 html_sidebars = {
     "**": [
-        "sidebar/scroll-start.html",
-        "sidebar/brand.html",
         "mini18n/snippets/select-lang.html",
-        "sidebar/search.html",
-        "sidebar/navigation.html",
-        "sidebar/ethical-ads.html",
-        "sidebar/scroll-end.html",
     ]
 }
 
