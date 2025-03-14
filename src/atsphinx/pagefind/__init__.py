@@ -16,18 +16,20 @@ def create_all_index(app: Sphinx, exc: Optional[Exception]):
     """
     bin = [p for p in get_candidate_paths() if p.exists()]
     cmd = [
+        # NOTE: Currentry, works for default theme.
         str(bin[0]),
         "--silent",
         "--site",
         str(app.outdir),
         "--root-selector",
-        ".body",
+        app.config.pagefind_root_selector,
     ]
     subprocess.run(cmd)
 
 
 def setup(app: Sphinx):  # noqa: D103
     app.connect("build-finished", create_all_index)
+    app.add_config_value("pagefind_root_selector", ".body", "html", str)
     return {
         "version": __version__,
         "env_version": 1,
