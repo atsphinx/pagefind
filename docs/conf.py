@@ -1,3 +1,5 @@
+import os
+
 from atsphinx.mini18n import get_template_dir as get_mini18n_template_dir
 from atsphinx.pagefind import __version__ as version
 
@@ -59,7 +61,9 @@ todo_include_todos = True
 # atsphinx.mini18n
 mini18n_default_language = "en"
 mini18n_support_languages = ["en", "ja"]
-mini18n_basepath = "/pagefind/"
+mini18n_basepath = (
+    "/pagefind/" if os.environ.get("RUN_SPHINX_AUTOBUILD", 0) != "1" else "/"
+)
 
 
 def setup(app):
