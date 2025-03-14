@@ -8,3 +8,4 @@ from sphinx.testing.util import SphinxTestApp
 def test__it(app: SphinxTestApp):
     """Test to pass."""
     app.build()
+    assert (app.outdir / "pagefind").exists()
