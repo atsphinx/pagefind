@@ -42,18 +42,17 @@ html_theme_options = {
     "logo_description": "This is documentation of atsphinx-pagefind.",
     "sidebar_position": "right",
     "sidebar_size": 3,
-    "footer_icons": [
+    "navbar_icons": [
         {
-            "name": "GitHub",
-            "url": "https://github.com/atsphinx/pagefind/",
-            "html": "",
-            "class": "fa-brands fa-solid fa-github fa-2x",
+            "label": "",
+            "icon": "fa-brands fa-solid fa-github fa-2x",
+            "url": "https://github.com/atsphinx/pagefind",
         },
     ],
 }
 html_sidebars = {
     "**": [
-        "mini18n/snippets/select-lang.html",
+        "select-lang.html",
         "sidebar/logo.html",
         "sidebar/line.html",
         "sidebar/searchbox.html",
@@ -71,6 +70,7 @@ todo_include_todos = True
 # atsphinx.mini18n
 mini18n_default_language = "en"
 mini18n_support_languages = ["en", "ja"]
+mini18n_select_lang_label = "Languages"
 mini18n_basepath = os.environ.get("SPHINX_MINI18N_BASEPATH", "/")
 # atsphinx.pagefind
 pagefind_root_selector = "main"
