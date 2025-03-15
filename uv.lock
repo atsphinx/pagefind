@@ -49,7 +49,7 @@ wheels = [
 
 [[package]]
 name = "atsphinx-bulma"
-version = "0.2.2"
+version = "0.2.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "sphinx", version = "7.4.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
@@ -57,9 +57,9 @@ dependencies = [
     { name = "sphinx", version = "8.2.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6c/1f/e2da7465ecc77765ee0cb1a5d0df0b8caa3cfdb53fbb54c16fbd6e8051be/atsphinx_bulma-0.2.2.tar.gz", hash = "sha256:3eba004826ef25e8b5c3ac4f9de415d513f222a931fbe99716f577b2616c574d", size = 73772 }
+sdist = { url = "https://files.pythonhosted.org/packages/71/d2/e623abae5e55031506a71d802797f76aac4e84d37b5388674dd10eda41e8/atsphinx_bulma-0.2.4.tar.gz", hash = "sha256:bbfd304633b5d431b507a405f55e5aabcd5a30176649aa08807c80f82b591169", size = 73504 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/76/4e/ec11ca39fd8e4d5e37d3215aa34689e7bba6b6a5cfd3c86ef671720405a9/atsphinx_bulma-0.2.2-py3-none-any.whl", hash = "sha256:113a349da2215789e7e0eb91a4b3c97fa3d7505f24c08a5c13b407af88b66e11", size = 16172 },
+    { url = "https://files.pythonhosted.org/packages/2e/18/55a12ff02ae2ad40ad54c602ce02d3cb0010b06243c0c22311c31e74c398/atsphinx_bulma-0.2.4-py3-none-any.whl", hash = "sha256:0c520b11e9a3947f77b44d1c189d88b37b5de4ede4bde96dc3a44b9f877fc894", size = 15833 },
 ]
 
 [[package]]
@@ -118,7 +118,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "atsphinx-bulma" },
+    { name = "atsphinx-bulma", specifier = ">=0.2.4" },
     { name = "atsphinx-mini18n" },
     { name = "doc8" },
     { name = "esbonio" },
@@ -130,7 +130,7 @@ dev = [
     { name = "types-docutils", specifier = ">=0.21.0.20241128" },
 ]
 docs = [
-    { name = "atsphinx-bulma" },
+    { name = "atsphinx-bulma", specifier = ">=0.2.4" },
     { name = "atsphinx-mini18n" },
     { name = "sphinx-autobuild" },
     { name = "sphinx-intl" },
