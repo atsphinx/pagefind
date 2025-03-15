@@ -17,6 +17,7 @@ extensions = [
     "sphinx.ext.todo",
     # Third-party extensions
     "atsphinx.mini18n",
+    "atsphinx.pagefind",
 ]
 templates_path = ["_templates", get_mini18n_template_dir()]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
@@ -36,6 +37,11 @@ html_css_files = [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
 ]
 html_theme_options = {
+    "color_mode": "light",
+    "bulmaswatch": "pulse",
+    "logo_description": "This is documentation of atsphinx-pagefind.",
+    "sidebar_position": "right",
+    "sidebar_size": 3,
     "footer_icons": [
         {
             "name": "GitHub",
@@ -48,6 +54,10 @@ html_theme_options = {
 html_sidebars = {
     "**": [
         "mini18n/snippets/select-lang.html",
+        "sidebar/logo.html",
+        "sidebar/line.html",
+        "sidebar/searchbox.html",
+        "sidebar/localtoc.html",
     ]
 }
 
@@ -64,6 +74,8 @@ mini18n_support_languages = ["en", "ja"]
 mini18n_basepath = (
     "/pagefind/" if os.environ.get("RUN_SPHINX_AUTOBUILD", 0) != "1" else "/"
 )
+# atsphinx.pagefind
+pagefind_root_selector = "main"
 
 
 def setup(app):
