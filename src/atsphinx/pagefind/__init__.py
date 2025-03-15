@@ -3,7 +3,7 @@
 import subprocess
 from typing import Optional
 
-from pagefind_bin import get_candidate_paths  # type: ignore[import-untyped]
+from pagefind_bin import get_executable  # type: ignore[import-untyped]
 from sphinx.application import Sphinx
 
 __version__ = "0.0.0"
@@ -14,10 +14,13 @@ def create_all_index(app: Sphinx, exc: Optional[Exception]):
 
     This uses generated html, therefore run after build.
     """
-    bin = [p for p in get_candidate_paths() if p.exists()]
+    try:
+        bin = get_executable()
+    except FileNotFoundError:
+        raise
     cmd = [
         # NOTE: Currentry, works for default theme.
-        str(bin[0]),
+        str(bin),
         "--silent",
         "--site",
         str(app.outdir),
