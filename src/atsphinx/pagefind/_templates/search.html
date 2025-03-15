@@ -28,7 +28,12 @@
 
 <script>
   window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({element: "#atsphinx-pagefind", showSubResults: true});
+    const ui = new PagefindUI({element: "#atsphinx-pagefind", showSubResults: true});
+    const query = new URLSearchParams(window.location.search).get("q");
+    document
+      .querySelectorAll('input[name="q"]')
+      .forEach((el) => (el.value = query));
+    if (query) ui.triggerSearch(query);
   });
 </script>
 {% endblock %}
