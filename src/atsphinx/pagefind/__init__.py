@@ -13,7 +13,7 @@ __version__ = "0.0.0"
 root = Path(__file__).resolve().parent
 
 
-def set_template_path(app: Sphinx, config: Config):
+def update_config(app: Sphinx, config: Config):
     config.templates_path.insert(0, str(root / "_templates"))
 
 
@@ -39,7 +39,7 @@ def create_all_index(app: Sphinx, exc: Optional[Exception]):
 
 
 def setup(app: Sphinx):  # noqa: D103
-    app.connect("config-inited", set_template_path)
+    app.connect("config-inited", update_config)
     app.connect("build-finished", create_all_index)
     app.add_config_value("pagefind_root_selector", ".body", "html", str)
     return {
