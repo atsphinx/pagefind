@@ -1,20 +1,18 @@
 {%- extends "!search.html" %}
 
-{% block body %}
-<h1 id="search-documentation">{{ _('Search') }}</h1>
+{%- block scripts %}
+{{ super.super() }}
+{%- endblock %}
 
-{% block scriptwarning %}
-<noscript>
-  <div class="admonition warning">
-    <p>
-      {% trans %}Please activate JavaScript to enable the search
-      functionality.{% endtrans %}
-    </p>
-  </div>
-</noscript>
+{% block extrahead %}
+<meta name="robots"
+    content="noindex" />
+{{ super.super() }}
 {% endblock %}
 
-{% block searchcomponent %}
+{% block searchtext %}{% endblock %}
+
+{% block searchbox %}
 <p>
   {% trans %}Searching for multiple words only shows matches that contain
   all words.{% endtrans %}
@@ -38,4 +36,4 @@
 </script>
 {% endblock %}
 
-{% endblock %}
+{% block searchresults %}{% endblock %}
