@@ -49,6 +49,8 @@ def create_all_index(app: Sphinx, exc: Optional[Exception]):
         str(app.outdir),
         "--output-subdir",
         app.config.pagefind_directory,
+        "--force-language",
+        app.config.language,
         "--root-selector",
         app.config.pagefind_root_selector,
     ]
