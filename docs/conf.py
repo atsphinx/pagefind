@@ -16,6 +16,8 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
     # Third-party extensions
+    "sphinx_toolbox.confval",
+    # atsphinx group
     "atsphinx.footnotes",
     "atsphinx.mini18n",
     "atsphinx.pagefind",
@@ -76,12 +78,3 @@ mini18n_select_lang_label = "Languages"
 mini18n_basepath = os.environ.get("SPHINX_MINI18N_BASEPATH", "/")
 # atsphinx.pagefind
 pagefind_root_selector = "main"
-
-
-def setup(app):
-    app.add_object_type(
-        "confval",
-        "confval",
-        objname="configuration value",
-        indextemplate="pair: %s; configuration value",
-    )

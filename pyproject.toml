@@ -59,6 +59,7 @@ docs = [
     "atsphinx-mini18n",
     "sphinx-autobuild",
     "sphinx-intl",
+    "sphinx-toolbox>=3.9.0",
 ]
 test = [
     "beautifulsoup4>=4.13.3",
