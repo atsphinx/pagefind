@@ -16,6 +16,7 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
     # Third-party extensions
+    "atsphinx.footnotes",
     "atsphinx.mini18n",
     "atsphinx.pagefind",
 ]
@@ -35,6 +36,7 @@ html_css_files = [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
+    "custom.css",
 ]
 html_theme_options = {
     "color_mode": "light",
