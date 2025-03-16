@@ -16,6 +16,9 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
     # Third-party extensions
+    "sphinx_toolbox.confval",
+    # atsphinx group
+    "atsphinx.footnotes",
     "atsphinx.mini18n",
     "atsphinx.pagefind",
 ]
@@ -35,6 +38,7 @@ html_css_files = [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
+    "custom.css",
 ]
 html_theme_options = {
     "color_mode": "light",
@@ -74,12 +78,3 @@ mini18n_select_lang_label = "Languages"
 mini18n_basepath = os.environ.get("SPHINX_MINI18N_BASEPATH", "/")
 # atsphinx.pagefind
 pagefind_root_selector = "main"
-
-
-def setup(app):
-    app.add_object_type(
-        "confval",
-        "confval",
-        objname="configuration value",
-        indextemplate="pair: %s; configuration value",
-    )
