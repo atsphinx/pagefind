@@ -20,26 +20,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../changes.rst:3
-msgid "Changelogs"
-msgstr "更新履歴"
+#: ../../configuration.rst:3
+msgid "Configuration"
+msgstr "設定"
 
-#: ../../../CHANGES.rst:2
-msgid "v0.0.0"
+#: ../../configuration.rst:6
+msgid "Generic options"
+msgstr "全体設定"
+
+#: ../../configuration.rst
+msgid "**Type:** string"
 msgstr ""
 
-#: ../../../CHANGES.rst
-msgid "date"
+#: ../../configuration.rst
+msgid "**Required:** ``False``"
 msgstr ""
 
-#: ../../../CHANGES.rst:4
-msgid "2025-03-07 (Asia/Tokyo)"
+#: ../../configuration.rst
+msgid "**Default:** ``\"_pagefind\"``"
 msgstr ""
 
-#: ../../../CHANGES.rst:6
-msgid "Initial commit."
-msgstr ""
+#: ../../configuration.rst:17
+msgid "Indexing options"
+msgstr "インデックス生成の設定"
 
-#~ msgid "Change logs"
-#~ msgstr ""
+#: ../../configuration.rst
+msgid "**Default:** ``\".body\"``"
+msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: atsphinx-pagefind 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-07 23:55+0900\n"
+"POT-Creation-Date: 2025-03-16 20:50+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -26,13 +26,51 @@ msgstr ""
 
 #: ../../index.rst:6
 msgid "Overview"
+msgstr "概要"
+
+#: ../../../README.rst:2
+msgid ""
+"Pagefind is website search library for static site.It can indexes from "
+"published website. Please see `official website <https://pagefind.app/>`_"
+" if you want to know more information."
+msgstr ""
+"Pagefind は静的サイト向けのサイト内検索ライブラリです。"
+"生成済みのサイトから検索用インデックスの生成をします。"
+"詳しい情報は `Pagefindの公式サイト <https://pagefind.app/>`_ を参照してください。"
+
+#: ../../../README.rst:5
+msgid ""
+"You can see `own document <https://atsphinx.github.io/pagefind/>`_ to "
+"know behavior of thi."
+msgstr ""
+"どのような動作をするかを知りたい場合は、"
+"`プロジェクトのドキュメントサイト <https://atsphinx.github.io/pagefind/>`_ を参照してください。"
+
+#: ../../index.rst:13
+msgid "Features"
+msgstr "機能"
+
+#: ../../index.rst:15
+msgid "Override search page with pagefind components."
+msgstr "検索用ページをPagefindを用いたものに変更。"
+
+#: ../../index.rst:18
+msgid "Contents"
 msgstr ""
 
-#: ../../index.rst:8
-msgid "Todo"
+#: ../../index.rst:33
+msgid "License"
 msgstr ""
 
-#: ../../index.rst:8
-msgid "Write it"
+#: ../../index.rst:35
+msgid ""
+"Apache License 2.0. Please see `it "
+"<https://github.com/atsphinx/pagefind/blob/main/LICENSE>`_."
 msgstr ""
+
+#~ msgid "Todo"
+#~ msgstr ""
+
+#~ msgid "Write it"
+#~ msgstr ""
 

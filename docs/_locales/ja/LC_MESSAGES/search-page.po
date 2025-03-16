@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: atsphinx-pagefind 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-07 23:55+0900\n"
+"POT-Creation-Date: 2025-03-16 20:50+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -20,27 +20,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../guide.rst:3
-msgid "User guide"
-msgstr ""
+#: ../../search-page.rst:3
+msgid "Search page"
+msgstr "検索ページ機能"
 
-#: ../../guide.rst:6
-msgid "Installation"
-msgstr ""
+#: ../../search-page.rst:5
+msgid "\"Search page integration\" is standard feature of atsphinx-pagefind."
+msgstr "\"検索ページ連携\" は、atsphinx-pagefindの基本機能です。"
 
-#: ../../guide.rst:8 ../../guide.rst:13 ../../guide.rst:18
+#: ../../search-page.rst:7
 msgid "Todo"
 msgstr ""
 
-#: ../../guide.rst:8 ../../guide.rst:13 ../../guide.rst:18
-msgid "Write it"
-msgstr ""
-
-#: ../../guide.rst:11
-msgid "Usage"
-msgstr ""
-
-#: ../../guide.rst:16
-msgid "Configuration"
+#: ../../search-page.rst:7
+msgid "Show difference \"bundled\" search page and \"pagefind\" search page"
 msgstr ""
 

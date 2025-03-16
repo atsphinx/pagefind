@@ -20,26 +20,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../changes.rst:3
-msgid "Changelogs"
-msgstr "更新履歴"
-
-#: ../../../CHANGES.rst:2
-msgid "v0.0.0"
+#: ../../../src/atsphinx/pagefind/_templates/search.html:17
+msgid ""
+"Searching for multiple words only shows matches that contain\n"
+"  all words."
 msgstr ""
-
-#: ../../../CHANGES.rst
-msgid "date"
-msgstr ""
-
-#: ../../../CHANGES.rst:4
-msgid "2025-03-07 (Asia/Tokyo)"
-msgstr ""
-
-#: ../../../CHANGES.rst:6
-msgid "Initial commit."
-msgstr ""
-
-#~ msgid "Change logs"
-#~ msgstr ""
 
