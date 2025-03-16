@@ -32,6 +32,8 @@ jobs:
       - name: 'Build document'
         run: |
           task setup docs:build-mini18n-dirhtml
+        env:
+          ATSPHINX_MINI18N_BASEPATH: '/pagefind/'
       - name: 'Upload artifact'
         uses: actions/upload-pages-artifact@v3
         with:

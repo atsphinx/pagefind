@@ -75,6 +75,6 @@ todo_include_todos = True
 mini18n_default_language = "en"
 mini18n_support_languages = ["en", "ja"]
 mini18n_select_lang_label = "Languages"
-mini18n_basepath = os.environ.get("SPHINX_MINI18N_BASEPATH", "/")
+mini18n_basepath = os.environ.get("ATSPHINX_MINI18N_BASEPATH", "/")
 # atsphinx.pagefind
 pagefind_root_selector = "main"
