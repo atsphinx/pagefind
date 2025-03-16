@@ -22,6 +22,7 @@ Contents
 
    setup
    search-page
+   configuration
 
 .. toctree::
    :hidden:
