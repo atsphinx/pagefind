@@ -1,6 +1,6 @@
 [project]
 name = "atsphinx-pagefind"
-version = "0.0.0"
+version = "0.1.0"
 description = "Pagefind search component for Sphinx."
 authors = [{name = "Kazuya Takei", email = "myself@attakei.net"}]
 license = "Apache-2.0"
