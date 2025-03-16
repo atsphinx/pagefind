@@ -9,10 +9,23 @@ Overview
    :start-line: 10
    :end-line: 15
 
-.. toctree::
-   :maxdepth: 1
+Features
+========
 
-   guide
+* Override search page with pagefind components.
+
+Contents
+========
+
+.. toctree::
+   :maxdepth: 2
+
+   setup
+   search-page
+
+.. toctree::
+   :hidden:
+
    changes
 
 License
