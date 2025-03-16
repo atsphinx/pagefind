@@ -25,8 +25,6 @@ tasks:
     dir: '{{.TASKFILE_DIR}}'
     cmds:
       - '{{.RUN_PYTHON}} sphinx-autobuild -b {{.SPHINX_DEFAULT_BUILD}} {{.SPHINX_SOURCE_DIR}} {{.SPHINX_OUTPUT_DIR}}/{{.SPHINX_DEFAULT_BUILD}}'
-    env:
-      RUN_SPHINX_AUTOBUILD: 1
   build-*:
     desc: 'Make docs'
     dir: '{{.TASKFILE_DIR}}'
