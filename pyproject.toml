@@ -60,6 +60,7 @@ docs = [
     "sphinx-intl",
 ]
 test = [
+    "beautifulsoup4>=4.13.3",
     "pytest",
 ]
 
