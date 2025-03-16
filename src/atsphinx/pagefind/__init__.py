@@ -14,6 +14,7 @@ root = Path(__file__).resolve().parent
 
 
 def update_config(app: Sphinx, config: Config):
+    """Update configuration values to run pagefind."""
     config.templates_path.insert(0, str(root / "_templates"))
     config.html_static_path.append(str(root / "_static"))
 
