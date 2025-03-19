@@ -12,7 +12,7 @@ This is Sphinx extension to use Pagefind for searching documentation.
 Pagefind is website search library for static site.It can indexes from published website.
 Please see `official website <https://pagefind.app/>`_ if you want to know more information.
 
-You can see `own document <https://atsphinx.github.io/pagefind/>`_ to know behavior of thi.
+You can see `own document <https://atsphinx.github.io/pagefind/>`_ to know behavior of this.
 
 Getting started
 ===============
