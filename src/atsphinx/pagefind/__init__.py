@@ -9,7 +9,7 @@ from pagefind_bin import get_executable  # type: ignore[import-untyped]
 from sphinx.application import Sphinx
 from sphinx.config import Config
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 root = Path(__file__).resolve().parent
 

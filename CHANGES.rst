@@ -2,6 +2,16 @@
 Change logs
 ===========
 
+v0.1.1
+======
+
+:Date: 2025-03-19 (Asia/Tokyo)
+
+Others
+------
+
+* Fix typo on README (used on PyPI).
+
 v0.1.0
 ======
 
