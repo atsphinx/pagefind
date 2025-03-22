@@ -10,6 +10,7 @@ def test__it(app: SphinxTestApp):
     """Test to pass."""
     app.build()
     assert (app.outdir / "_pagefind").exists()
+    assert not (app.outdir / "searchindex.js").exists()
     soup = BeautifulSoup((app.outdir / "search.html").read_text(), "html.parser")
     assert [
         e

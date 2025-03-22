@@ -20,6 +20,20 @@ def update_config(app: Sphinx, config: Config):
     config.html_static_path.append(str(root / "_static"))
 
 
+def disable_builtin_search(app: Sphinx):
+    """Override builder's property to disable search features."""
+    if hasattr(app.builder, "search"):
+        app.builder.search = False
+
+
+def append_search_html(app: Sphinx):
+    """Re-append search page.
+
+    This is to create page when builtin search is disabled.
+    """
+    yield ("search", {}, "search.html")
+
+
 def configure_page_context(
     app: Sphinx,
     pagename: str,
@@ -60,7 +74,9 @@ def create_all_index(app: Sphinx, exc: Optional[Exception]):
 def setup(app: Sphinx):  # noqa: D103
     app.add_config_value("pagefind_directory", "_pagefind", "html", str)
     app.connect("config-inited", update_config)
+    app.connect("builder-inited", disable_builtin_search)
     app.connect("build-finished", create_all_index)
+    app.connect("html-collect-pages", append_search_html)
     app.connect("html-page-context", configure_page_context)
     app.add_config_value("pagefind_root_selector", ".body", "html", str)
     return {
