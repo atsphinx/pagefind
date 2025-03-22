@@ -2,6 +2,16 @@
 Change logs
 ===========
 
+v0.1.2
+======
+
+:Date: 2025-03-22 (Asia/Tokyo)
+
+Fixes
+-----
+
+* Disable built-in search fetures.
+
 v0.1.1
 ======
 
