@@ -19,7 +19,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: jdx/mise-action@v2
       - name: 'Configure dependencies'
         run: |
@@ -40,7 +40,7 @@ jobs:
           - '3.13'
         workspace: ['locked', 'latest']
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: jdx/mise-action@v2
       - name: 'Stand by python-version'
         run: |
@@ -59,7 +59,7 @@ jobs:
   docs-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: jdx/mise-action@v2
       - name: 'Configure dependencies'
         run: |
@@ -70,7 +70,7 @@ jobs:
   build-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: jdx/mise-action@v2
       - name: 'Try building as package'
         run: |
